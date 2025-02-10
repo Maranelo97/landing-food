@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -38,7 +43,13 @@ nav {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  transition: 3s;
 }
+
+.navbar-links-container a:hover {
+  cursor: pointer;
+}
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;
@@ -105,7 +116,7 @@ nav {
   cursor: pointer;
   font-weight: 600;
   color: white;
-  transition: 0.2s;
+  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +126,10 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  color: #e48f0f;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .about-section-container {
   margin-top: 20rem;
@@ -158,10 +172,11 @@ nav {
   cursor: pointer;
   font-weight: 600;
   color: #484848;
-  transition: 0.2s;
+  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .watch-video-button svg {
   font-size: 3rem;
@@ -289,6 +304,13 @@ nav {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
+  transition: 0.3s;
+}
+
+.work-section-info:hover {
+  border-radius: 41px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 9px #9b9b9b, -5px -5px 9px #ffffff;
 }
 .work-section-info h2 {
   margin: 1rem 0rem;

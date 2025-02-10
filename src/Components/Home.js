@@ -1,13 +1,11 @@
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
-import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
-
-const Home = () => {
+import { forwardRef } from "react";
+const Home = forwardRef((props, ref) => {
   return (
-    <div className="home-container">
-      <Navbar />
+    <div className="home-container" ref={ref}>
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
@@ -21,7 +19,7 @@ const Home = () => {
             & marinating, so you can cook a fresh food.
           </p>
           <button className="secondary-button">
-            Order Now <FiArrowRight />{" "}
+            Order Now <FiArrowRight />
           </button>
         </div>
         <div className="home-image-section">
@@ -30,6 +28,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Home;
